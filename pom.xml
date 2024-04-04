@@ -5,7 +5,7 @@
   <groupId>com.ivpek</groupId>
   <artifactId>diplomivpek</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
   <name>diplomivpek</name>
   <url>http://maven.apache.org</url>
@@ -13,11 +13,15 @@
   <modules>
     <module>dispatcher</module>
     <module>common-rabbitmq</module>
+    <module>dispatcher</module>
   </modules>
 
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
+    <telegrambot.starter.version>6.1.0</telegrambot.starter.version>
+    <log4j.version>1.2.17</log4j.version>
+    <lombok.servion>1.18.22</lombok.servion>
   </properties>
 
   <parent>
