@@ -10,5 +10,4 @@ class DispatcherApplication {
         SpringApplication.run(DispatcherApplication.class);
     }
 }
-public class DispatcerApplication {
-}
+

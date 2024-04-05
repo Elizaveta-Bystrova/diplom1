@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5d98aef-cc3b-4a89-ba77-f7413d555088" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/java/com/ivpek/DispatcerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/java/com/ivpek/controller/TelegramBot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/java/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/com/ivpek/DispatcerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/com/ivpek/DispatcerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/com/ivpek/controller/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/com/ivpek/controller/TelegramBot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ivpek/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ivpek/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/test/java/com/ivpek/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,15 +23,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2edGIL28oYdGCY2Glzq6RYqp5RL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -44,13 +42,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.DispatcherApplication.executor": "Debug",
+    "Spring Boot.DispatcherApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/java/diplomivpek",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,6 +63,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\diplomivpek\dispatcher\src\main\java" />
+      <recent name="D:\java\diplomivpek\dispatcher\src\main\java\com\ivpek\controller" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="DispatcherApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="dispatcher" />
@@ -95,11 +104,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712226961966</updated>
-      <workItem from="1712226963275" duration="6065000" />
+      <workItem from="1712226963275" duration="13087000" />
+      <workItem from="1712311406059" duration="575000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
