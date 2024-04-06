@@ -1,5 +1,6 @@
 package com.ivpek.controller;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -10,6 +11,7 @@ public class TelegramBot extends TelegramLongPollingBot {
     private String botName;
     @Value("${bot.token}")
     private String botToken;
+    private static final Logger log = Logger.getLogger(TelegramBot.class);
     @Override
     public String getBotUsername() {
         return botName;
@@ -23,7 +25,7 @@ public class TelegramBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
         var originalMessage = update.getMessage();
-        System.out.println(originalMessage.getText());
+        log.debug(originalMessage.getText());
 
     }
 }
