@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5d98aef-cc3b-4a89-ba77-f7413d555088" name="Changes" comment="1videofinal">
-      <change afterPath="$PROJECT_DIR$/common-rabbitmq/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-rabbitmq/src/main/java/com/ivpek/model/RabbitQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-rabbitmq/src/test/java/com/ivpek/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/java/com/ivpek/controller/UpdateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/java/com/ivpek/service/AnswerConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/java/com/ivpek/service/UpdateProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/java/com/ivpek/service/impl/UpdateProducerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/java/com/ivpek/utils/MessageUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="f5d98aef-cc3b-4a89-ba77-f7413d555088" name="Changes" comment="2videofinal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/com/ivpek/controller/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/com/ivpek/controller/TelegramBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,18 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Elizaveta-Bystrova"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Elizaveta-Bystrova&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Elizaveta-Bystrova/diplom1.git",
-    "accountId": "4357fb32-6965-4bf8-ac1c-555477e12c4e"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Elizaveta-Bystrova/diplom1.git&quot;,
+    &quot;accountId&quot;: &quot;4357fb32-6965-4bf8-ac1c-555477e12c4e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -132,7 +120,7 @@
       <workItem from="1712566845376" duration="13803000" />
       <workItem from="1712590812200" duration="909000" />
       <workItem from="1712604731678" duration="1015000" />
-      <workItem from="1712605984758" duration="718000" />
+      <workItem from="1712605984758" duration="2082000" />
     </task>
     <task id="LOCAL-00001" summary="1videofinal">
       <option name="closed" value="true" />
@@ -166,15 +154,35 @@
       <option name="project" value="LOCAL" />
       <updated>1712570023996</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2videofinal">
+      <option name="closed" value="true" />
+      <created>1712606832394</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712606832394</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1videofinal" />
-    <option name="LAST_COMMIT_MESSAGE" value="1videofinal" />
+    <MESSAGE value="2videofinal" />
+    <option name="LAST_COMMIT_MESSAGE" value="2videofinal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
