@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5d98aef-cc3b-4a89-ba77-f7413d555088" name="Changes" comment="4videofinal">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/com/ivpek/dao/RawDataDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/com/ivpek/entity/RawData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/com/ivpek/service/MainService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/com/ivpek/service/impl/MainServiceImpl.java" afterDir="false" />
+    <list default="true" id="f5d98aef-cc3b-4a89-ba77-f7413d555088" name="Changes" comment="6videofinal">
+      <change afterPath="$PROJECT_DIR$/common-jpa/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/com/ivpek/dao/AppUserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/com/ivpek/entity/AppUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/com/ivpek/entity/enums/UserState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jpa/src/test/java/com/ivpek/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/com/ivpek/controller/UpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/com/ivpek/controller/UpdateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/node/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/src/main/java/com/ivpek/service/impl/ConsumerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/com/ivpek/service/impl/ConsumerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/java/com/ivpek/entity/RawData.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/com/ivpek/entity/RawData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/java/com/ivpek/service/impl/MainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/com/ivpek/service/impl/MainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +30,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -71,7 +75,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.DispatcherApplication.executor": "Run",
-    "Spring Boot.NodeApplication.executor": "Run",
+    "Spring Boot.NodeApplication.executor": "Debug",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
@@ -101,7 +105,7 @@
       <recent name="com.ivpek" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DispatcherApplication">
+  <component name="RunManager" selected="Spring Boot.NodeApplication">
     <configuration name="DispatcherApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="dispatcher" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ivpek.DispatcherApplication" />
@@ -130,8 +134,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DispatcherApplication" />
         <item itemvalue="Spring Boot.NodeApplication" />
+        <item itemvalue="Spring Boot.DispatcherApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +166,7 @@
       <workItem from="1712658105707" duration="7295000" />
       <workItem from="1712676438464" duration="2273000" />
       <workItem from="1712678951961" duration="3289000" />
-      <workItem from="1712765826271" duration="4160000" />
+      <workItem from="1712765826271" duration="8012000" />
     </task>
     <task id="LOCAL-00001" summary="1videofinal">
       <option name="closed" value="true" />
@@ -228,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712681742749</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="6videofinal">
+      <option name="closed" value="true" />
+      <created>1712770208554</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712770208554</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +262,8 @@
     <MESSAGE value="2videofinal" />
     <MESSAGE value="3videofinal" />
     <MESSAGE value="4videofinal" />
-    <option name="LAST_COMMIT_MESSAGE" value="4videofinal" />
+    <MESSAGE value="6videofinal" />
+    <option name="LAST_COMMIT_MESSAGE" value="6videofinal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
