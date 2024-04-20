@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.52">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>782</IntrospectionStateNumber>
+      <IntrospectionStateNumber>788</IntrospectionStateNumber>
       <ServerVersion>14.5</ServerVersion>
       <StartupTime>1713599105</StartupTime>
       <TimeZones>true ACDT
@@ -1395,7 +1395,7 @@ true posixrules
 13391||10|C|G
 13391||-9223372036854775808|U|G
 13391||10|U|G</Grants>
-      <IntrospectionStateNumber>782</IntrospectionStateNumber>
+      <IntrospectionStateNumber>788</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>userok</OwnerName>
     </database>
@@ -4825,8 +4825,8 @@ true posixrules
     <schema id="262" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>782</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2024-04-20.07:54:17</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>788</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2024-04-20.08:21:37</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>userok</OwnerName>
@@ -4839,7 +4839,15 @@ true posixrules
       <StateNumber>759</StateNumber>
       <OwnerName>userok</OwnerName>
     </sequence>
-    <sequence id="264" parent="262" name="app_user_id_seq">
+    <sequence id="264" parent="262" name="app_photo_id_seq">
+      <DasType>bigint|0s</DasType>
+      <ObjectId>16428</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>783</StateNumber>
+      <OwnerName>userok</OwnerName>
+    </sequence>
+    <sequence id="265" parent="262" name="app_user_id_seq">
       <DasType>bigint|0s</DasType>
       <ObjectId>16398</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
@@ -4847,7 +4855,7 @@ true posixrules
       <StateNumber>748</StateNumber>
       <OwnerName>userok</OwnerName>
     </sequence>
-    <sequence id="265" parent="262" name="binary_content_id_seq">
+    <sequence id="266" parent="262" name="binary_content_id_seq">
       <DasType>bigint|0s</DasType>
       <ObjectId>16414</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
@@ -4855,7 +4863,7 @@ true posixrules
       <StateNumber>760</StateNumber>
       <OwnerName>userok</OwnerName>
     </sequence>
-    <sequence id="266" parent="262" name="raw_data_id_seq">
+    <sequence id="267" parent="262" name="raw_data_id_seq">
       <DasType>bigint|0s</DasType>
       <ObjectId>16390</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
@@ -4863,31 +4871,37 @@ true posixrules
       <StateNumber>743</StateNumber>
       <OwnerName>userok</OwnerName>
     </sequence>
-    <table id="267" parent="262" name="app_document">
+    <table id="268" parent="262" name="app_document">
       <ObjectId>16407</ObjectId>
       <StateNumber>761</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>userok</OwnerName>
     </table>
-    <table id="268" parent="262" name="app_user">
+    <table id="269" parent="262" name="app_photo">
+      <ObjectId>16429</ObjectId>
+      <StateNumber>784</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>userok</OwnerName>
+    </table>
+    <table id="270" parent="262" name="app_user">
       <ObjectId>16399</ObjectId>
       <StateNumber>748</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>userok</OwnerName>
     </table>
-    <table id="269" parent="262" name="binary_content">
+    <table id="271" parent="262" name="binary_content">
       <ObjectId>16415</ObjectId>
       <StateNumber>761</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>userok</OwnerName>
     </table>
-    <table id="270" parent="262" name="raw_data">
+    <table id="272" parent="262" name="raw_data">
       <ObjectId>16391</ObjectId>
       <StateNumber>743</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>userok</OwnerName>
     </table>
-    <column id="271" parent="267" name="id">
+    <column id="273" parent="268" name="id">
       <DasType>bigint|0s</DasType>
       <IdentityKind>by-default</IdentityKind>
       <NotNull>1</NotNull>
@@ -4896,44 +4910,44 @@ true posixrules
       <SequenceId>16406</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="272" parent="267" name="doc_name">
+    <column id="274" parent="268" name="doc_name">
       <DasType>varchar(255)|0s</DasType>
       <Position>2</Position>
       <StateNumber>759</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="273" parent="267" name="file_size">
+    <column id="275" parent="268" name="file_size">
       <DasType>bigint|0s</DasType>
       <Position>3</Position>
       <StateNumber>759</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="274" parent="267" name="mime_type">
+    <column id="276" parent="268" name="mime_type">
       <DasType>varchar(255)|0s</DasType>
       <Position>4</Position>
       <StateNumber>759</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="275" parent="267" name="telegram_file_id">
+    <column id="277" parent="268" name="telegram_file_id">
       <DasType>varchar(255)|0s</DasType>
       <Position>5</Position>
       <StateNumber>759</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="276" parent="267" name="binary_content_id">
+    <column id="278" parent="268" name="binary_content_id">
       <DasType>bigint|0s</DasType>
       <Position>6</Position>
       <StateNumber>759</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <foreign-key id="277" parent="267" name="fkfcm2si6jix496diei6g94rrxm">
+    <foreign-key id="279" parent="268" name="fkfcm2si6jix496diei6g94rrxm">
       <ColNames>binary_content_id</ColNames>
       <ObjectId>16422</ObjectId>
       <StateNumber>761</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16415</RefTableId>
     </foreign-key>
-    <index id="278" parent="267" name="app_document_pkey">
+    <index id="280" parent="268" name="app_document_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16412</ObjectId>
@@ -4942,14 +4956,64 @@ true posixrules
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="279" parent="267" name="app_document_pkey">
+    <key id="281" parent="268" name="app_document_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16413</ObjectId>
       <Primary>1</Primary>
       <StateNumber>759</StateNumber>
       <UnderlyingIndexId>16412</UnderlyingIndexId>
     </key>
-    <column id="280" parent="268" name="id">
+    <column id="282" parent="269" name="id">
+      <DasType>bigint|0s</DasType>
+      <IdentityKind>by-default</IdentityKind>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>783</StateNumber>
+      <SequenceId>16428</SequenceId>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="283" parent="269" name="file_size">
+      <DasType>integer|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>783</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="284" parent="269" name="telegram_file_id">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>783</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="285" parent="269" name="binary_content_id">
+      <DasType>bigint|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>783</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <foreign-key id="286" parent="269" name="fksrw4o8i2rpx21b5wsu5yts4uu">
+      <ColNames>binary_content_id</ColNames>
+      <ObjectId>16434</ObjectId>
+      <StateNumber>784</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16415</RefTableId>
+    </foreign-key>
+    <index id="287" parent="269" name="app_photo_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16432</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>783</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="288" parent="269" name="app_photo_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16433</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>783</StateNumber>
+      <UnderlyingIndexId>16432</UnderlyingIndexId>
+    </key>
+    <column id="289" parent="270" name="id">
       <DasType>bigint|0s</DasType>
       <IdentityKind>by-default</IdentityKind>
       <NotNull>1</NotNull>
@@ -4958,55 +5022,55 @@ true posixrules
       <SequenceId>16398</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="281" parent="268" name="email">
+    <column id="290" parent="270" name="email">
       <DasType>varchar(255)|0s</DasType>
       <Position>2</Position>
       <StateNumber>748</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="282" parent="268" name="first_login_date">
+    <column id="291" parent="270" name="first_login_date">
       <DasType>timestamp|0s</DasType>
       <Position>3</Position>
       <StateNumber>748</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="283" parent="268" name="first_name">
+    <column id="292" parent="270" name="first_name">
       <DasType>varchar(255)|0s</DasType>
       <Position>4</Position>
       <StateNumber>748</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="284" parent="268" name="is_active">
+    <column id="293" parent="270" name="is_active">
       <DasType>boolean|0s</DasType>
       <Position>5</Position>
       <StateNumber>748</StateNumber>
       <TypeId>16</TypeId>
     </column>
-    <column id="285" parent="268" name="last_name">
+    <column id="294" parent="270" name="last_name">
       <DasType>varchar(255)|0s</DasType>
       <Position>6</Position>
       <StateNumber>748</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="286" parent="268" name="state">
+    <column id="295" parent="270" name="state">
       <DasType>varchar(255)|0s</DasType>
       <Position>7</Position>
       <StateNumber>748</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="287" parent="268" name="telegram_user_id">
+    <column id="296" parent="270" name="telegram_user_id">
       <DasType>bigint|0s</DasType>
       <Position>8</Position>
       <StateNumber>748</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="288" parent="268" name="username">
+    <column id="297" parent="270" name="username">
       <DasType>varchar(255)|0s</DasType>
       <Position>9</Position>
       <StateNumber>748</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="289" parent="268" name="app_user_pkey">
+    <index id="298" parent="270" name="app_user_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16404</ObjectId>
@@ -5015,14 +5079,14 @@ true posixrules
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="290" parent="268" name="app_user_pkey">
+    <key id="299" parent="270" name="app_user_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16405</ObjectId>
       <Primary>1</Primary>
       <StateNumber>748</StateNumber>
       <UnderlyingIndexId>16404</UnderlyingIndexId>
     </key>
-    <column id="291" parent="269" name="id">
+    <column id="300" parent="271" name="id">
       <DasType>bigint|0s</DasType>
       <IdentityKind>by-default</IdentityKind>
       <NotNull>1</NotNull>
@@ -5031,13 +5095,13 @@ true posixrules
       <SequenceId>16414</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="292" parent="269" name="file_as_array_of_bytes">
+    <column id="301" parent="271" name="file_as_array_of_bytes">
       <DasType>bytea|0s</DasType>
       <Position>2</Position>
       <StateNumber>760</StateNumber>
       <TypeId>17</TypeId>
     </column>
-    <index id="293" parent="269" name="binary_content_pkey">
+    <index id="302" parent="271" name="binary_content_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16420</ObjectId>
@@ -5046,14 +5110,14 @@ true posixrules
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="294" parent="269" name="binary_content_pkey">
+    <key id="303" parent="271" name="binary_content_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16421</ObjectId>
       <Primary>1</Primary>
       <StateNumber>760</StateNumber>
       <UnderlyingIndexId>16420</UnderlyingIndexId>
     </key>
-    <column id="295" parent="270" name="id">
+    <column id="304" parent="272" name="id">
       <DasType>bigint|0s</DasType>
       <IdentityKind>by-default</IdentityKind>
       <NotNull>1</NotNull>
@@ -5062,13 +5126,13 @@ true posixrules
       <SequenceId>16390</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="296" parent="270" name="event">
+    <column id="305" parent="272" name="event">
       <DasType>jsonb|0s</DasType>
       <Position>2</Position>
       <StateNumber>743</StateNumber>
       <TypeId>3802</TypeId>
     </column>
-    <index id="297" parent="270" name="raw_data_pkey">
+    <index id="306" parent="272" name="raw_data_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16396</ObjectId>
@@ -5077,7 +5141,7 @@ true posixrules
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="298" parent="270" name="raw_data_pkey">
+    <key id="307" parent="272" name="raw_data_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16397</ObjectId>
       <Primary>1</Primary>
