@@ -25,3 +25,7 @@
 2024-04-18 14:40:01 DEBUG UpdateProducerImpl:21 - /some_test_command
 2024-04-18 14:40:50 DEBUG UpdateProducerImpl:21 - 
 2024-04-18 14:41:23 DEBUG UpdateProducerImpl:21 - 
+2024-04-20 10:47:14 DEBUG UpdateProducerImpl:21 - 
+2024-04-20 10:48:40 DEBUG UpdateProducerImpl:21 - 
+2024-04-20 10:49:32 DEBUG UpdateProducerImpl:21 - 
+2024-04-20 10:50:34 DEBUG UpdateProducerImpl:21 - hello

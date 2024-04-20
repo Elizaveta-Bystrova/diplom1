@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5d98aef-cc3b-4a89-ba77-f7413d555088" name="Changes" comment="6videofinal">
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/com/ivpek/service/enums/ServiceCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f567ddcc-ea5c-4e27-969e-d5482e1b3483.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f567ddcc-ea5c-4e27-969e-d5482e1b3483.xml" afterDir="false" />
+    <list default="true" id="f5d98aef-cc3b-4a89-ba77-f7413d555088" name="Changes" comment="9videofinal">
+      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/com/ivpek/dao/AppDocumentDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/com/ivpek/dao/BinaryContentDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/com/ivpek/entity/AppDocument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/com/ivpek/entity/BinaryContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node/src/main/java/com/ivpek/exceptions/UploadFileException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node/src/main/java/com/ivpek/service/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node/src/main/java/com/ivpek/service/enums/ServiceCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node/src/main/java/com/ivpek/service/impl/FileServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/src/main/java/com/ivpek/service/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/com/ivpek/service/MainService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/src/main/java/com/ivpek/service/impl/ConsumerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/com/ivpek/service/impl/ConsumerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/node.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/node.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/java/com/ivpek/service/enums/ServiceCommands.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node/src/main/java/com/ivpek/service/impl/MainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/com/ivpek/service/impl/MainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +31,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="Class" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,36 +65,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.DispatcherApplication.executor": "Run",
-    "Spring Boot.NodeApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "11",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/java/diplomivpek/node/src/main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DispatcherApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.NodeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/java/diplomivpek/node/src/main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\java\diplomivpek\node\src\main" />
@@ -161,7 +168,8 @@
       <workItem from="1712676438464" duration="2273000" />
       <workItem from="1712678951961" duration="3289000" />
       <workItem from="1712765826271" duration="8012000" />
-      <workItem from="1713433477618" duration="6905000" />
+      <workItem from="1713433477618" duration="8407000" />
+      <workItem from="1713594782500" duration="4560000" />
     </task>
     <task id="LOCAL-00001" summary="1videofinal">
       <option name="closed" value="true" />
@@ -235,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712770208554</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="9videofinal">
+      <option name="closed" value="true" />
+      <created>1713440762120</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713440762120</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +274,8 @@
     <MESSAGE value="3videofinal" />
     <MESSAGE value="4videofinal" />
     <MESSAGE value="6videofinal" />
-    <option name="LAST_COMMIT_MESSAGE" value="6videofinal" />
+    <MESSAGE value="9videofinal" />
+    <option name="LAST_COMMIT_MESSAGE" value="9videofinal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
