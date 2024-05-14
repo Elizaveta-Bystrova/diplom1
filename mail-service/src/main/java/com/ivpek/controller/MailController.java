@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.ivpek.dto.MailParams;
+import com.ivpek.utils.dto.MailParams;
 import com.ivpek.service.MailSenderService;
 
 @RequestMapping("/mail")
@@ -19,7 +19,7 @@ public class MailController {
 
     @PostMapping("/send")
     public ResponseEntity<?> sendActivationMail(@RequestBody MailParams mailParams) {
-        mailSenderService.send(mailParams);
+        mailSenderService.send((com.ivpek.dto.MailParams) mailParams);
         return ResponseEntity.ok().build();
     }
 }

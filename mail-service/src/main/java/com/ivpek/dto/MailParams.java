@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @RequiredArgsConstructor
-public class MailParams {
+public class MailParams extends com.ivpek.utils.dto.MailParams {
     private String id;
     private String emailTo;
 }

@@ -36,3 +36,9 @@
 2024-04-21 13:10:14 DEBUG UpdateProducerImpl:21 - 
 2024-04-21 13:10:52 DEBUG UpdateProducerImpl:21 - 
 2024-04-21 13:12:55 DEBUG UpdateProducerImpl:21 - 
+2024-05-06 10:51:12 DEBUG UpdateProducerImpl:21 - /start
+2024-05-06 10:51:19 DEBUG UpdateProducerImpl:21 - Hellotest
+2024-05-14 11:26:09 DEBUG UpdateProducerImpl:21 - 11
+2024-05-14 11:26:13 DEBUG UpdateProducerImpl:21 - /help
+2024-05-14 11:36:22 DEBUG UpdateProducerImpl:21 - /cancel
+2024-05-14 11:36:41 DEBUG UpdateProducerImpl:21 - hi
