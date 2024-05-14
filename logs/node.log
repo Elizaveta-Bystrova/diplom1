@@ -1335,3 +1335,5 @@
 2024-05-14 11:26:13 DEBUG ConsumerServiceImpl:26 - NODE: Text message is received
 2024-05-14 11:36:22 DEBUG ConsumerServiceImpl:26 - NODE: Text message is received
 2024-05-14 11:36:41 DEBUG ConsumerServiceImpl:26 - NODE: Text message is received
+2024-05-14 15:51:45 DEBUG ConsumerServiceImpl:40 - NODE: Photo message is received
+2024-05-14 15:54:39 DEBUG ConsumerServiceImpl:40 - NODE: Photo message is received
