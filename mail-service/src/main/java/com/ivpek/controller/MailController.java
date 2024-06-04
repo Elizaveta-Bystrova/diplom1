@@ -19,7 +19,7 @@ public class MailController {
 
     @PostMapping("/send")
     public ResponseEntity<?> sendActivationMail(@RequestBody MailParams mailParams) {
-        mailSenderService.send((com.ivpek.dto.MailParams) mailParams);
+        mailSenderService.send(mailParams);
         return ResponseEntity.ok().build();
     }
 }

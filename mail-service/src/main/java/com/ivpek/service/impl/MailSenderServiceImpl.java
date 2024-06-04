@@ -1,11 +1,11 @@
 package com.ivpek.service.impl;
 
+import com.ivpek.service.MailSenderService;
+import com.ivpek.utils.dto.MailParams;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
-import com.ivpek.dto.MailParams;
-import com.ivpek.service.MailSenderService;
 
 @Service
 public class MailSenderServiceImpl implements MailSenderService {
